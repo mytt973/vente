@@ -63,7 +63,7 @@ function log(nool) {
   }
 }
 let truc = `        
-            <legend>Select the type of your humanity:</legend>
+            <legend>Select:</legend>
           
             <div>
               <input type="radio" onclick="log(false)" name="drone" value="Homme" checked />
