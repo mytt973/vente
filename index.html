@@ -34,8 +34,26 @@ http://www.tooplate.com/view/2099-scenic
       function openModal(params) {
         console.log(params + " active modal");
         const modal = document.getElementsByClassName("modal2 none2");
+        //modal.style.display = "block";
 
-        modal[params].setAttribute("class", "modal2");
+     
+      modal[params].setAttribute("class", "modal2");
+
+      modal[params].style.opacity="0.4"
+      console.log(modal[params]);
+      
+let temps = 10; // 100 étapes de 10ms
+
+const intervalId = setInterval(() => {
+    temps--;
+    console.log("Évolution : " + temps);
+
+    if (temps <= 0) {
+        clearInterval(intervalId); // S'arrête tout seul quand la condition est remplie
+        console.log("Terminé !");
+    }
+}, 100);
+    
       }
       function closeModal(params) {
         console.log("desactiver");
