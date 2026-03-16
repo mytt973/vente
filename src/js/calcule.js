@@ -78,8 +78,9 @@ let truc = `
             <div>
               <input type="radio" onclick="log(true)" id="louie" name="drone" value="autre" />
               <label id="inconu" for="autre">autre</label>
-              <input id="inconu2" class="autre" placeholder="something"></input>
-            </div>`;
+              <input id="inconu2" class="autre" placeholder="..."></input>
+             
+            </div> <div>(Mon 1er formulaire en JS)</div>`;
 
 const body2 = document.querySelector("#from2");
 body2.innerHTML = truc;
